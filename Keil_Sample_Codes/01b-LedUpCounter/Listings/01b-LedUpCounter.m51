@@ -1,0 +1,104 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/27/2018  16:19:55  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\main.obj TO .\Objects\01b-LedUpCounter PRINT (.\Listings\01b-LedUpCounter.m51) RAM
+>> SIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\01b-LedUpCounter (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0020H     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    0820H     0014H     UNIT         ?PR?MAIN?MAIN
+            CODE    0834H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\01b-LedUpCounter (MAIN)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_DELAY_MS?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\01b-LedUpCounter (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0820H         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/27/2018  16:19:55  PAGE 2
+
+
+  C:0800H         PUBLIC        _DELAY_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        ms_Count
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0800H         LINE#         31
+  C:0800H         LINE#         32
+  C:0800H         LINE#         34
+  C:080AH         LINE#         35
+  C:080AH         LINE#         36
+  C:0818H         LINE#         37
+  C:081FH         LINE#         38
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          MAIN
+  -------         DO            
+  D:0001H         SYMBOL        count
+  -------         ENDDO         
+  C:0820H         LINE#         39
+  C:0820H         LINE#         40
+  C:0820H         LINE#         41
+  C:0822H         LINE#         43
+  C:0822H         LINE#         44
+  C:0822H         LINE#         45
+  C:0824H         LINE#         46
+  C:0826H         LINE#         47
+  C:0828H         LINE#         48
+  C:082AH         LINE#         49
+  C:0831H         LINE#         50
+  C:0832H         LINE#         51
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0034H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=67
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

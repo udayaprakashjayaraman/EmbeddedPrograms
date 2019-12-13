@@ -1,0 +1,106 @@
+C51 COMPILER V9.59.0.0   5_LCD_DISP4BIT                                                    05/26/2019 22:30:49 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE 5_LCD_DISP4BIT
+OBJECT MODULE PLACED IN .\Objects\5 lcd disp4bit.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE 5 lcd disp4bit.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Lis
+                    -tings\5 lcd disp4bit.lst) TABS(2) OBJECT(.\Objects\5 lcd disp4bit.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          sbit rs=P2^0;
+   4          sbit rw=P2^1;
+   5          sbit e=P2^2;
+   6          void delay(unsigned int);
+   7          void cmd1(unsigned char);
+   8          void dat1(unsigned char);
+   9          void cmd(unsigned char);
+  10          void dat(unsigned char);
+  11          
+  12          void main(void)
+  13          {
+  14   1        
+  15   1        unsigned char ch[]="Udaya";
+  16   1        unsigned char ch1[]="Embedded";
+  17   1        
+  18   1        unsigned int i,j,k;
+  19   1        
+  20   1        
+  21   1        cmd(0x28);
+  22   1        cmd(0x01);
+  23   1        cmd(0x0c);
+  24   1        cmd(0x83);
+  25   1        cmd(0x06);
+  26   1        for(i=0;ch[i]!='\0';i++)
+  27   1            dat(ch[i]);
+  28   1      
+  29   1          cmd(0xc3);
+  30   1        for(j=0;ch1[j]!='\0';j++)
+  31   1        {
+  32   2          dat(ch1[j]);
+  33   2         }
+  34   1         while(1){
+  35   2        for(k=0;k<16;k++)
+  36   2        {
+  37   3        cmd(0x1c);
+  38   3        }
+  39   2        }
+  40   1      }
+  41          void delay(unsigned int t)
+  42          {
+  43   1        unsigned int i,j;
+  44   1        e=1;
+  45   1        for(i=0;i<t;i++)
+  46   1        for(j=0;j<1275;j++);
+  47   1        e=0;
+  48   1      }
+  49          void cmd(unsigned char a)
+  50          {
+  51   1      unsigned char x;
+  52   1      x=a&0xf0;
+  53   1      cmd1(x);
+  54   1      x=(a<<4)&0xf0;
+C51 COMPILER V9.59.0.0   5_LCD_DISP4BIT                                                    05/26/2019 22:30:49 PAGE 2   
+
+  55   1      cmd1(x);
+  56   1      }
+  57           void dat(unsigned char a)
+  58          {
+  59   1      unsigned char x;
+  60   1      x=a&0xf0;
+  61   1      dat1(x);
+  62   1      x=(a<<4)&0xf0;
+  63   1      dat1(x);
+  64   1      }
+  65          
+  66          
+  67          void cmd1(unsigned char ch)
+  68          {
+  69   1        P2=ch;
+  70   1        rs=0;
+  71   1        rw=0;
+  72   1        delay(10);
+  73   1      }
+  74          void dat1(unsigned char ch)
+  75          {
+  76   1        P2=ch;
+  77   1        rs=1;
+  78   1        rw=0;
+  79   1        delay(10);
+  80   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    251    ----
+   CONSTANT SIZE    =     15    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      23
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

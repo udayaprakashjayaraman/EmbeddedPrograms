@@ -1,0 +1,263 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    06/23/2019  13:20:23  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\matrix.obj TO .\Objects\matrixx PRINT (.\Listings\matrixx.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\matrix.obj (MATRIX)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\matrixx (MATRIX)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?MATRIX
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0041H     UNIT         ?PR?_MSDELAY?MATRIX
+            CODE    0841H     003BH     UNIT         ?PR?MAIN?MATRIX
+            CODE    087CH     002FH     UNIT         ?PR?ROW_FINDER1?MATRIX
+            CODE    08ABH     002FH     UNIT         ?PR?ROW_FINDER2?MATRIX
+            CODE    08DAH     002FH     UNIT         ?PR?ROW_FINDER3?MATRIX
+            CODE    0909H     001AH     UNIT         ?PR?_LCD_DATA?MATRIX
+            CODE    0923H     0012H     UNIT         ?PR?_LCD_CMD?MATRIX
+            CODE    0935H     000FH     UNIT         ?PR?LCD_INIT?MATRIX
+            CODE    0944H     000FH     UNIT         ?PR?LCD_INIT2?MATRIX
+            CODE    0953H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\matrixx (MATRIX)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MATRIX
+
+?PR?MAIN?MATRIX
+  +--> ?PR?LCD_INIT?MATRIX
+  +--> ?PR?_MSDELAY?MATRIX
+  +--> ?PR?ROW_FINDER1?MATRIX
+  +--> ?PR?ROW_FINDER2?MATRIX
+  +--> ?PR?ROW_FINDER3?MATRIX
+  +--> ?PR?LCD_INIT2?MATRIX
+
+?PR?LCD_INIT?MATRIX
+  +--> ?PR?_MSDELAY?MATRIX
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/23/2019  13:20:23  PAGE 2
+
+
+  +--> ?PR?_LCD_CMD?MATRIX
+
+?PR?_MSDELAY?MATRIX
+  +--> ?PR?_LCD_CMD?MATRIX
+
+?PR?ROW_FINDER1?MATRIX
+  +--> ?PR?_LCD_DATA?MATRIX
+
+?PR?_LCD_DATA?MATRIX
+  +--> ?PR?_MSDELAY?MATRIX
+
+?PR?ROW_FINDER2?MATRIX
+  +--> ?PR?_LCD_DATA?MATRIX
+
+?PR?ROW_FINDER3?MATRIX
+  +--> ?PR?_LCD_DATA?MATRIX
+
+?PR?LCD_INIT2?MATRIX
+  +--> ?PR?_MSDELAY?MATRIX
+  +--> ?PR?_LCD_CMD?MATRIX
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\matrixx (MATRIX)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MATRIX
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  B:0090H.1       PUBLIC        R1
+  D:00B0H         PUBLIC        P3
+  B:0090H.2       PUBLIC        R2
+  B:0090H.3       PUBLIC        R3
+  B:0090H.4       PUBLIC        R4
+  C:0841H         PUBLIC        main
+  C:0909H         PUBLIC        _lcd_data
+  C:0923H         PUBLIC        _lcd_cmd
+  C:0935H         PUBLIC        lcd_init
+  D:0008H         SYMBOL        lcdcount
+  B:00B0H.4       PUBLIC        e
+  B:00B0H.2       PUBLIC        rs
+  C:087CH         PUBLIC        row_finder1
+  C:08ABH         PUBLIC        row_finder2
+  C:08DAH         PUBLIC        row_finder3
+  B:00B0H.3       PUBLIC        rw
+  C:0821H         PUBLIC        _msdelay
+  B:0090H.5       PUBLIC        C1
+  B:0090H.6       PUBLIC        C2
+  B:0090H.7       PUBLIC        C3
+  C:0944H         PUBLIC        lcd_init2
+  -------         PROC          L?0039
+  -------         ENDPROC       L?0039
+  -------         PROC          _MSDELAY
+  D:0006H         SYMBOL        time
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/23/2019  13:20:23  PAGE 3
+
+
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0821H         LINE#         16
+  C:0821H         LINE#         17
+  C:0821H         LINE#         19
+  C:082BH         LINE#         20
+  C:0840H         LINE#         21
+  -------         ENDPROC       _MSDELAY
+  -------         PROC          _LCD_CMD
+  D:0007H         SYMBOL        command
+  C:0923H         LINE#         22
+  C:0923H         LINE#         23
+  C:0923H         LINE#         24
+  C:0925H         LINE#         25
+  C:0927H         LINE#         26
+  C:0929H         LINE#         27
+  C:092BH         LINE#         28
+  C:0932H         LINE#         29
+  C:0934H         LINE#         30
+  -------         ENDPROC       _LCD_CMD
+  -------         PROC          _LCD_DATA
+  D:0007H         SYMBOL        disp_data
+  C:0909H         LINE#         32
+  C:0909H         LINE#         33
+  C:0909H         LINE#         34
+  C:090BH         LINE#         35
+  C:090DH         LINE#         36
+  C:090FH         LINE#         37
+  C:0911H         LINE#         38
+  C:0918H         LINE#         39
+  C:091AH         LINE#         40
+  C:0922H         LINE#         41
+  -------         ENDPROC       _LCD_DATA
+  -------         PROC          LCD_INIT
+  C:0935H         LINE#         43
+  C:0935H         LINE#         44
+  C:0935H         LINE#         45
+  C:0935H         LINE#         46
+  C:0935H         LINE#         47
+  C:0935H         LINE#         48
+  C:0935H         LINE#         49
+  C:0935H         LINE#         50
+  C:0938H         LINE#         51
+  C:093DH         LINE#         52
+  -------         ENDPROC       LCD_INIT
+  -------         PROC          LCD_INIT2
+  C:0944H         LINE#         55
+  C:0944H         LINE#         56
+  C:0944H         LINE#         57
+  C:0944H         LINE#         58
+  C:0944H         LINE#         59
+  C:0944H         LINE#         60
+  C:0944H         LINE#         61
+  C:0944H         LINE#         62
+  C:0947H         LINE#         63
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/23/2019  13:20:23  PAGE 4
+
+
+  C:094CH         LINE#         64
+  -------         ENDPROC       LCD_INIT2
+  -------         PROC          ROW_FINDER1
+  C:087CH         LINE#         67
+  C:087CH         LINE#         68
+  C:087CH         LINE#         69
+  C:0884H         LINE#         70
+  C:088AH         LINE#         72
+  C:088DH         LINE#         73
+  C:0892H         LINE#         74
+  C:0895H         LINE#         75
+  C:089AH         LINE#         76
+  C:089DH         LINE#         77
+  C:08A2H         LINE#         78
+  C:08A5H         LINE#         79
+  C:08AAH         LINE#         80
+  -------         ENDPROC       ROW_FINDER1
+  -------         PROC          ROW_FINDER2
+  C:08ABH         LINE#         82
+  C:08ABH         LINE#         83
+  C:08ABH         LINE#         84
+  C:08B3H         LINE#         85
+  C:08B9H         LINE#         87
+  C:08BCH         LINE#         88
+  C:08C1H         LINE#         89
+  C:08C4H         LINE#         90
+  C:08C9H         LINE#         91
+  C:08CCH         LINE#         92
+  C:08D1H         LINE#         93
+  C:08D4H         LINE#         94
+  C:08D9H         LINE#         95
+  -------         ENDPROC       ROW_FINDER2
+  -------         PROC          ROW_FINDER3
+  C:08DAH         LINE#         97
+  C:08DAH         LINE#         98
+  C:08DAH         LINE#         99
+  C:08E2H         LINE#         100
+  C:08E8H         LINE#         102
+  C:08EBH         LINE#         103
+  C:08F0H         LINE#         104
+  C:08F3H         LINE#         105
+  C:08F8H         LINE#         106
+  C:08FBH         LINE#         107
+  C:0900H         LINE#         108
+  C:0903H         LINE#         109
+  C:0908H         LINE#         110
+  -------         ENDPROC       ROW_FINDER3
+  -------         PROC          MAIN
+  C:0841H         LINE#         113
+  C:0841H         LINE#         114
+  C:0841H         LINE#         115
+  C:0844H         LINE#         116
+  C:0844H         LINE#         117
+  C:0844H         LINE#         118
+  C:084BH         LINE#         119
+  C:0851H         LINE#         120
+  C:0859H         LINE#         121
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  06/23/2019  13:20:23  PAGE 5
+
+
+  C:085CH         LINE#         122
+  C:0861H         LINE#         123
+  C:0864H         LINE#         124
+  C:0869H         LINE#         125
+  C:086CH         LINE#         126
+  C:086FH         LINE#         127
+  C:0877H         LINE#         128
+  C:0877H         LINE#         129
+  C:087AH         LINE#         130
+  C:087AH         LINE#         131
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MATRIX
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0153H BYTE (16%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=354
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

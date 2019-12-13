@@ -1,0 +1,3 @@
+".\Objects\poornima1.obj" 
+TO ".\Objects\poornima" 
+PRINT(".\Listings\poornima.m51") RAMSIZE(256) 

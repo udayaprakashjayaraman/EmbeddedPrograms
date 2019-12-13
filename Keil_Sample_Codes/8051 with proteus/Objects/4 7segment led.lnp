@@ -1,0 +1,3 @@
+".\Objects\4 7segment led.obj" 
+TO ".\Objects\4 7segment led" 
+PRINT(".\Listings\4 7segment led.m51") RAMSIZE(256) 

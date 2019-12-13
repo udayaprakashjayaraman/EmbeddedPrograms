@@ -1,0 +1,3 @@
+".\Objects\5 lcd disp4bit.obj" 
+TO ".\Objects\5 lcd disp4bit" 
+PRINT(".\Listings\5 lcd disp4bit.m51") RAMSIZE(256) 

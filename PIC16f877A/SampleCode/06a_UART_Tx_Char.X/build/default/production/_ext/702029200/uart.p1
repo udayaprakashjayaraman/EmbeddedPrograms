@@ -1,0 +1,1032 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"1437 D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1437: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"1999
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1999: extern volatile unsigned char TXSTA __attribute__((address(0x098)));
+[v _TXSTA `Vuc ~T0 @X0 0 e@152 ]
+"964
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 964: extern volatile unsigned char RCSTA __attribute__((address(0x018)));
+[v _RCSTA `Vuc ~T0 @X0 0 e@24 ]
+"100 ../00-libfiles/uart.h
+[; ;../00-libfiles/uart.h: 100: void UART_SetBaudRate(uint32_t v_baudRate_u32);
+[v _UART_SetBaudRate `(v ~T0 @X0 0 ef1`ul ]
+"2080 D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2080: extern volatile unsigned char SPBRG __attribute__((address(0x099)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@153 ]
+"2743
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2743: extern volatile __bit RCIF __attribute__((address(0x65)));
+[v _RCIF `Vb ~T0 @X0 0 e@101 ]
+"1066
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1066: extern volatile unsigned char RCREG __attribute__((address(0x01A)));
+[v _RCREG `Vuc ~T0 @X0 0 e@26 ]
+"3037
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 3037: extern volatile __bit TXIF __attribute__((address(0x64)));
+[v _TXIF `Vb ~T0 @X0 0 e@100 ]
+"1059
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1059: extern volatile unsigned char TXREG __attribute__((address(0x019)));
+[v _TXREG `Vuc ~T0 @X0 0 e@25 ]
+"10 D:\software\MPLAB\XC8 COMPILER\pic\include\c90\stdarg.h
+[v ___va_start `(*v ~T0 @X0 0 ef ]
+[p i ___va_start ]
+"13
+[v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
+[p i ___va_arg ]
+"54 D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;D:\software\MPLAB\XC8 COMPILER\pic\include\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"302 ../00-libfiles/stdutils.h
+[p x FOSC = HS ]
+"303
+[p x WDTE = OFF ]
+"304
+[p x PWRTE = OFF ]
+"305
+[p x BOREN = OFF ]
+"306
+[p x LVP = OFF ]
+"307
+[p x CPD = OFF ]
+"308
+[p x WRT = OFF ]
+"309
+[p x CP = OFF ]
+"44 ../00-libfiles/uart.c
+[p k ]
+"45
+[p n 752 ]
+"46
+[p n 1496 ]
+"47
+[p n 520 ]
+"48
+[p n 1498 ]
+"49
+[p n 356 ]
+"50
+[p n 359 ]
+"66
+[; ;../00-libfiles/uart.c: 66: void UART_Init(uint32_t v_baudRate_u32)
+[v _UART_Init `(v ~T0 @X0 1 ef1`ul ]
+"67
+[; ;../00-libfiles/uart.c: 67: {
+{
+[e :U _UART_Init ]
+"66
+[; ;../00-libfiles/uart.c: 66: void UART_Init(uint32_t v_baudRate_u32)
+[v _v_baudRate_u32 `ul ~T0 @X0 1 r1 ]
+"67
+[; ;../00-libfiles/uart.c: 67: {
+[f ]
+"68
+[; ;../00-libfiles/uart.c: 68:     TRISC=0x80;
+[e = _TRISC -> -> 128 `i `uc ]
+"69
+[; ;../00-libfiles/uart.c: 69:     TXSTA=0x20;
+[e = _TXSTA -> -> 32 `i `uc ]
+"70
+[; ;../00-libfiles/uart.c: 70:     RCSTA=0x90;
+[e = _RCSTA -> -> 144 `i `uc ]
+"71
+[; ;../00-libfiles/uart.c: 71:     UART_SetBaudRate(v_baudRate_u32);
+[e ( _UART_SetBaudRate (1 _v_baudRate_u32 ]
+"72
+[; ;../00-libfiles/uart.c: 72: }
+[e :UE 95 ]
+}
+"91
+[; ;../00-libfiles/uart.c: 91: void UART_SetBaudRate(uint32_t v_baudRate_u32)
+[v _UART_SetBaudRate `(v ~T0 @X0 1 ef1`ul ]
+"92
+[; ;../00-libfiles/uart.c: 92: {
+{
+[e :U _UART_SetBaudRate ]
+"91
+[; ;../00-libfiles/uart.c: 91: void UART_SetBaudRate(uint32_t v_baudRate_u32)
+[v _v_baudRate_u32 `ul ~T0 @X0 1 r1 ]
+"92
+[; ;../00-libfiles/uart.c: 92: {
+[f ]
+"93
+[; ;../00-libfiles/uart.c: 93:     uint8_t RegValue;
+[v _RegValue `uc ~T0 @X0 1 a ]
+"95
+[; ;../00-libfiles/uart.c: 95:     if((v_baudRate_u32 >= 2400) && (v_baudRate_u32<=115200UL))
+[e $ ! && >= _v_baudRate_u32 -> -> -> 2400 `i `l `ul <= _v_baudRate_u32 -> 115200 `ul 97  ]
+"96
+[; ;../00-libfiles/uart.c: 96:     {
+{
+"99
+[; ;../00-libfiles/uart.c: 99:         RegValue = (uint8_t)(uint32_t)((20000000UL / (64*(uint32_t)v_baudRate_u32)) - 1);
+[e = _RegValue -> - / -> 20000000 `ul * -> -> -> 64 `i `l `ul _v_baudRate_u32 -> -> -> 1 `i `l `ul `uc ]
+"100
+[; ;../00-libfiles/uart.c: 100:     }
+}
+[e $U 98  ]
+"101
+[; ;../00-libfiles/uart.c: 101:     else
+[e :U 97 ]
+"102
+[; ;../00-libfiles/uart.c: 102:     {
+{
+"104
+[; ;../00-libfiles/uart.c: 104:         RegValue = (uint8_t)(uint32_t)((20000000UL / (64*(uint32_t)9600)) - 1);
+[e = _RegValue -> - / -> 20000000 `ul * -> -> -> 64 `i `l `ul -> -> 9600 `i `ul -> -> -> 1 `i `l `ul `uc ]
+"105
+[; ;../00-libfiles/uart.c: 105:     }
+}
+[e :U 98 ]
+"107
+[; ;../00-libfiles/uart.c: 107:     SPBRG = RegValue;
+[e = _SPBRG _RegValue ]
+"108
+[; ;../00-libfiles/uart.c: 108: }
+[e :UE 96 ]
+}
+"123
+[; ;../00-libfiles/uart.c: 123: char UART_RxChar()
+[v _UART_RxChar `(uc ~T0 @X0 1 ef ]
+"124
+[; ;../00-libfiles/uart.c: 124: {
+{
+[e :U _UART_RxChar ]
+[f ]
+"125
+[; ;../00-libfiles/uart.c: 125:     while(RCIF==0);
+[e $U 100  ]
+[e :U 101 ]
+[e :U 100 ]
+[e $ == -> _RCIF `i -> 0 `i 101  ]
+[e :U 102 ]
+"126
+[; ;../00-libfiles/uart.c: 126:     RCIF=0;
+[e = _RCIF -> -> 0 `i `b ]
+"127
+[; ;../00-libfiles/uart.c: 127:     return(RCREG);
+[e ) -> _RCREG `uc ]
+[e $UE 99  ]
+"128
+[; ;../00-libfiles/uart.c: 128: }
+[e :UE 99 ]
+}
+"145
+[; ;../00-libfiles/uart.c: 145: void UART_TxChar(char v_uartData_u8)
+[v _UART_TxChar `(v ~T0 @X0 1 ef1`uc ]
+"146
+[; ;../00-libfiles/uart.c: 146: {
+{
+[e :U _UART_TxChar ]
+"145
+[; ;../00-libfiles/uart.c: 145: void UART_TxChar(char v_uartData_u8)
+[v _v_uartData_u8 `uc ~T0 @X0 1 r1 ]
+"146
+[; ;../00-libfiles/uart.c: 146: {
+[f ]
+"147
+[; ;../00-libfiles/uart.c: 147:     while(TXIF==0);
+[e $U 104  ]
+[e :U 105 ]
+[e :U 104 ]
+[e $ == -> _TXIF `i -> 0 `i 105  ]
+[e :U 106 ]
+"148
+[; ;../00-libfiles/uart.c: 148:     TXIF=0;
+[e = _TXIF -> -> 0 `i `b ]
+"149
+[; ;../00-libfiles/uart.c: 149:     TXREG=v_uartData_u8;
+[e = _TXREG -> _v_uartData_u8 `uc ]
+"150
+[; ;../00-libfiles/uart.c: 150: }
+[e :UE 103 ]
+}
+"169
+[; ;../00-libfiles/uart.c: 169: void UART_TxString(const char *ptr_string)
+[v _UART_TxString `(v ~T0 @X0 1 ef1`*Cuc ]
+"170
+[; ;../00-libfiles/uart.c: 170: {
+{
+[e :U _UART_TxString ]
+"169
+[; ;../00-libfiles/uart.c: 169: void UART_TxString(const char *ptr_string)
+[v _ptr_string `*Cuc ~T0 @X0 1 r1 ]
+"170
+[; ;../00-libfiles/uart.c: 170: {
+[f ]
+"171
+[; ;../00-libfiles/uart.c: 171:     while(*ptr_string)
+[e $U 108  ]
+[e :U 109 ]
+"172
+[; ;../00-libfiles/uart.c: 172:         UART_TxChar(*ptr_string++);
+[e ( _UART_TxChar (1 *U ++ _ptr_string * -> -> 1 `i `x -> -> # *U _ptr_string `i `x ]
+[e :U 108 ]
+"171
+[; ;../00-libfiles/uart.c: 171:     while(*ptr_string)
+[e $ != -> *U _ptr_string `i -> 0 `i 109  ]
+[e :U 110 ]
+"173
+[; ;../00-libfiles/uart.c: 173: }
+[e :UE 107 ]
+}
+"198
+[; ;../00-libfiles/uart.c: 198: uint8_t UART_RxString(char *ptr_string)
+[v _UART_RxString `(uc ~T0 @X0 1 ef1`*uc ]
+"199
+[; ;../00-libfiles/uart.c: 199: {
+{
+[e :U _UART_RxString ]
+"198
+[; ;../00-libfiles/uart.c: 198: uint8_t UART_RxString(char *ptr_string)
+[v _ptr_string `*uc ~T0 @X0 1 r1 ]
+"199
+[; ;../00-libfiles/uart.c: 199: {
+[f ]
+"200
+[; ;../00-libfiles/uart.c: 200:     char ch;
+[v _ch `uc ~T0 @X0 1 a ]
+"201
+[; ;../00-libfiles/uart.c: 201:     uint8_t len = 0;
+[v _len `uc ~T0 @X0 1 a ]
+[e = _len -> -> 0 `i `uc ]
+"202
+[; ;../00-libfiles/uart.c: 202:     while(1)
+[e :U 113 ]
+"203
+[; ;../00-libfiles/uart.c: 203:     {
+{
+"204
+[; ;../00-libfiles/uart.c: 204:         ch=UART_RxChar();
+[e = _ch ( _UART_RxChar ..  ]
+"205
+[; ;../00-libfiles/uart.c: 205:         UART_TxChar(ch);
+[e ( _UART_TxChar (1 _ch ]
+"207
+[; ;../00-libfiles/uart.c: 207:         if((ch=='\r') || (ch=='\n'))
+[e $ ! || == -> _ch `ui -> 13 `ui == -> _ch `ui -> 10 `ui 115  ]
+"208
+[; ;../00-libfiles/uart.c: 208:         {
+{
+"209
+[; ;../00-libfiles/uart.c: 209:             ptr_string[len]=0;
+[e = *U + _ptr_string * -> _len `ux -> -> # *U _ptr_string `ui `ux -> -> 0 `i `uc ]
+"210
+[; ;../00-libfiles/uart.c: 210:             break;
+[e $U 114  ]
+"211
+[; ;../00-libfiles/uart.c: 211:         }
+}
+[e $U 116  ]
+"212
+[; ;../00-libfiles/uart.c: 212:         else if((ch=='\b') && (len!=0))
+[e :U 115 ]
+[e $ ! && == -> _ch `ui -> 8 `ui != -> _len `i -> 0 `i 117  ]
+"213
+[; ;../00-libfiles/uart.c: 213:         {
+{
+"214
+[; ;../00-libfiles/uart.c: 214:             len--;
+[e -- _len -> -> 1 `i `uc ]
+"215
+[; ;../00-libfiles/uart.c: 215:         }
+}
+[e $U 118  ]
+"216
+[; ;../00-libfiles/uart.c: 216:         else
+[e :U 117 ]
+"217
+[; ;../00-libfiles/uart.c: 217:         {
+{
+"218
+[; ;../00-libfiles/uart.c: 218:             ptr_string[len]=ch;
+[e = *U + _ptr_string * -> _len `ux -> -> # *U _ptr_string `ui `ux _ch ]
+"219
+[; ;../00-libfiles/uart.c: 219:             len++;
+[e ++ _len -> -> 1 `i `uc ]
+"220
+[; ;../00-libfiles/uart.c: 220:         }
+}
+[e :U 118 ]
+[e :U 116 ]
+"221
+[; ;../00-libfiles/uart.c: 221:     }
+}
+[e :U 112 ]
+[e $U 113  ]
+[e :U 114 ]
+"222
+[; ;../00-libfiles/uart.c: 222:   return len;
+[e ) _len ]
+[e $UE 111  ]
+"223
+[; ;../00-libfiles/uart.c: 223: }
+[e :UE 111 ]
+}
+"260
+[; ;../00-libfiles/uart.c: 260: void UART_TxNumber(uint8_t v_numericSystem_u8, uint32_t v_number_u32, uint8_t v_numOfDigitsToTransmit_u8)
+[v _UART_TxNumber `(v ~T0 @X0 1 ef3`uc`ul`uc ]
+"261
+[; ;../00-libfiles/uart.c: 261: {
+{
+[e :U _UART_TxNumber ]
+"260
+[; ;../00-libfiles/uart.c: 260: void UART_TxNumber(uint8_t v_numericSystem_u8, uint32_t v_number_u32, uint8_t v_numOfDigitsToTransmit_u8)
+[v _v_numericSystem_u8 `uc ~T0 @X0 1 r1 ]
+[v _v_number_u32 `ul ~T0 @X0 1 r2 ]
+[v _v_numOfDigitsToTransmit_u8 `uc ~T0 @X0 1 r3 ]
+"261
+[; ;../00-libfiles/uart.c: 261: {
+[f ]
+"262
+[; ;../00-libfiles/uart.c: 262:     uint8_t i=0,a[10];
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[v _a `uc ~T0 @X0 -> 10 `i a ]
+"264
+[; ;../00-libfiles/uart.c: 264:     if(2u == v_numericSystem_u8)
+[e $ ! == -> 2 `ui -> _v_numericSystem_u8 `ui 120  ]
+"265
+[; ;../00-libfiles/uart.c: 265:     {
+{
+"266
+[; ;../00-libfiles/uart.c: 266:         while(v_numOfDigitsToTransmit_u8!=0)
+[e $U 121  ]
+[e :U 122 ]
+"267
+[; ;../00-libfiles/uart.c: 267:         {
+{
+"270
+[; ;../00-libfiles/uart.c: 270:             i = (((v_number_u32)&((1<<((v_numOfDigitsToTransmit_u8-1)))))!=0u);
+[e = _i -> -> != & _v_number_u32 -> -> << -> 1 `i - -> _v_numOfDigitsToTransmit_u8 `i -> 1 `i `l `ul -> -> 0 `ui `ul `i `uc ]
+"271
+[; ;../00-libfiles/uart.c: 271:             UART_TxChar(((i)+0x30));
+[e ( _UART_TxChar (1 -> + -> _i `i -> 48 `i `uc ]
+"272
+[; ;../00-libfiles/uart.c: 272:             v_numOfDigitsToTransmit_u8--;
+[e -- _v_numOfDigitsToTransmit_u8 -> -> 1 `i `uc ]
+"273
+[; ;../00-libfiles/uart.c: 273:         }
+}
+[e :U 121 ]
+"266
+[; ;../00-libfiles/uart.c: 266:         while(v_numOfDigitsToTransmit_u8!=0)
+[e $ != -> _v_numOfDigitsToTransmit_u8 `i -> 0 `i 122  ]
+[e :U 123 ]
+"274
+[; ;../00-libfiles/uart.c: 274:     }
+}
+[e $U 124  ]
+"275
+[; ;../00-libfiles/uart.c: 275:     else if(v_number_u32==0)
+[e :U 120 ]
+[e $ ! == _v_number_u32 -> -> -> 0 `i `l `ul 125  ]
+"276
+[; ;../00-libfiles/uart.c: 276:     {
+{
+"280
+[; ;../00-libfiles/uart.c: 280:             UART_TxChar('0');
+[e ( _UART_TxChar (1 -> -> 48 `ui `uc ]
+"281
+[; ;../00-libfiles/uart.c: 281:     }
+}
+[e $U 126  ]
+"282
+[; ;../00-libfiles/uart.c: 282:     else
+[e :U 125 ]
+"283
+[; ;../00-libfiles/uart.c: 283:     {
+{
+"284
+[; ;../00-libfiles/uart.c: 284:         for(i=0;i<v_numOfDigitsToTransmit_u8;i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 130  ]
+[e :U 127 ]
+"285
+[; ;../00-libfiles/uart.c: 285:         {
+{
+"288
+[; ;../00-libfiles/uart.c: 288:             if(v_number_u32!=0)
+[e $ ! != _v_number_u32 -> -> -> 0 `i `l `ul 131  ]
+"289
+[; ;../00-libfiles/uart.c: 289:             {
+{
+"296
+[; ;../00-libfiles/uart.c: 296:                 a[i]=(uint32_t)(v_number_u32 - (v_numericSystem_u8 * (uint32_t)(v_number_u32/v_numericSystem_u8)));
+[e = *U + &U _a * -> _i `ux -> -> # *U &U _a `ui `ux -> - _v_number_u32 * -> _v_numericSystem_u8 `ul / _v_number_u32 -> _v_numericSystem_u8 `ul `uc ]
+"297
+[; ;../00-libfiles/uart.c: 297:                 v_number_u32=v_number_u32/v_numericSystem_u8;
+[e = _v_number_u32 / _v_number_u32 -> _v_numericSystem_u8 `ul ]
+"298
+[; ;../00-libfiles/uart.c: 298:             }
+}
+[e $U 132  ]
+"299
+[; ;../00-libfiles/uart.c: 299:             else if( (v_numOfDigitsToTransmit_u8 == 0xffu) ||
+[e :U 131 ]
+[e $ ! || == -> _v_numOfDigitsToTransmit_u8 `ui -> 255 `ui > -> _v_numOfDigitsToTransmit_u8 `ui -> 10 `ui 133  ]
+"301
+[; ;../00-libfiles/uart.c: 301:             {
+{
+"304
+[; ;../00-libfiles/uart.c: 304:                 break;
+[e $U 128  ]
+"305
+[; ;../00-libfiles/uart.c: 305:             }
+}
+[e $U 134  ]
+"306
+[; ;../00-libfiles/uart.c: 306:             else
+[e :U 133 ]
+"307
+[; ;../00-libfiles/uart.c: 307:             {
+{
+"311
+[; ;../00-libfiles/uart.c: 311:                 a[i]=0;
+[e = *U + &U _a * -> _i `ux -> -> # *U &U _a `ui `ux -> -> 0 `i `uc ]
+"312
+[; ;../00-libfiles/uart.c: 312:             }
+}
+[e :U 134 ]
+[e :U 132 ]
+"313
+[; ;../00-libfiles/uart.c: 313:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 130 ]
+[e $ < -> _i `i -> _v_numOfDigitsToTransmit_u8 `i 127  ]
+[e :U 128 ]
+}
+"315
+[; ;../00-libfiles/uart.c: 315:         while(i)
+[e $U 135  ]
+[e :U 136 ]
+"316
+[; ;../00-libfiles/uart.c: 316:         {
+{
+"318
+[; ;../00-libfiles/uart.c: 318:             UART_TxChar((((a[i-1])>0x09) ? ((a[i-1]) + 0x37): ((a[i-1]) + 0x30)));
+[e ( _UART_TxChar (1 -> ? > -> *U + &U _a * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _a `ui `ux `i -> 9 `i : + -> *U + &U _a * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _a `ui `ux `i -> 55 `i + -> *U + &U _a * -> -> - -> _i `i -> 1 `i `ui `ux -> -> # *U &U _a `ui `ux `i -> 48 `i `uc ]
+"319
+[; ;../00-libfiles/uart.c: 319:             i--;
+[e -- _i -> -> 1 `i `uc ]
+"320
+[; ;../00-libfiles/uart.c: 320:         }
+}
+[e :U 135 ]
+"315
+[; ;../00-libfiles/uart.c: 315:         while(i)
+[e $ != -> _i `i -> 0 `i 136  ]
+[e :U 137 ]
+"321
+[; ;../00-libfiles/uart.c: 321:     }
+}
+[e :U 126 ]
+[e :U 124 ]
+"324
+[; ;../00-libfiles/uart.c: 324: }
+[e :UE 119 ]
+}
+"413
+[; ;../00-libfiles/uart.c: 413: void UART_Printf(const char *argList, ...)
+[v _UART_Printf `(v ~T0 @X0 1 ev`*Cuc ]
+"414
+[; ;../00-libfiles/uart.c: 414: {
+{
+[e :U _UART_Printf ]
+"413
+[; ;../00-libfiles/uart.c: 413: void UART_Printf(const char *argList, ...)
+[v _argList `*Cuc ~T0 @X0 1 r0 ]
+"414
+[; ;../00-libfiles/uart.c: 414: {
+[f ]
+"415
+[; ;../00-libfiles/uart.c: 415:     const char *ptr;
+[v _ptr `*Cuc ~T0 @X0 1 a ]
+"416
+[; ;../00-libfiles/uart.c: 416:     va_list argp;
+[v _argp `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"417
+[; ;../00-libfiles/uart.c: 417:     sint16_t v_num_s16;
+[v _v_num_s16 `i ~T0 @X0 1 a ]
+"418
+[; ;../00-libfiles/uart.c: 418:     sint32_t v_num_s32;
+[v _v_num_s32 `l ~T0 @X0 1 a ]
+"419
+[; ;../00-libfiles/uart.c: 419:     uint16_t v_num_u16;
+[v _v_num_u16 `ui ~T0 @X0 1 a ]
+"420
+[; ;../00-libfiles/uart.c: 420:     uint32_t v_num_u32;
+[v _v_num_u32 `ul ~T0 @X0 1 a ]
+"421
+[; ;../00-libfiles/uart.c: 421:     char *str;
+[v _str `*uc ~T0 @X0 1 a ]
+"422
+[; ;../00-libfiles/uart.c: 422:     char ch;
+[v _ch `uc ~T0 @X0 1 a ]
+"423
+[; ;../00-libfiles/uart.c: 423:     uint8_t v_numOfDigitsToTransmit_u8;
+[v _v_numOfDigitsToTransmit_u8 `uc ~T0 @X0 1 a ]
+"429
+[; ;../00-libfiles/uart.c: 429:     *argp = __va_start();
+[e = *U &U _argp ( ___va_start ..  ]
+"432
+[; ;../00-libfiles/uart.c: 432:     for(ptr = argList; *ptr != '\0'; ptr++)
+{
+[e = _ptr _argList ]
+[e $U 142  ]
+[e :U 139 ]
+"433
+[; ;../00-libfiles/uart.c: 433:     {
+{
+"435
+[; ;../00-libfiles/uart.c: 435:         ch= *ptr;
+[e = _ch *U _ptr ]
+"436
+[; ;../00-libfiles/uart.c: 436:         if(ch == '%')
+[e $ ! == -> _ch `ui -> 37 `ui 143  ]
+"437
+[; ;../00-libfiles/uart.c: 437:         {
+{
+"438
+[; ;../00-libfiles/uart.c: 438:             ptr++;
+[e ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
+"439
+[; ;../00-libfiles/uart.c: 439:             ch = *ptr;
+[e = _ch *U _ptr ]
+"440
+[; ;../00-libfiles/uart.c: 440:            if((ch>=0x30) && (ch<=0x39))
+[e $ ! && >= -> _ch `i -> 48 `i <= -> _ch `i -> 57 `i 144  ]
+"441
+[; ;../00-libfiles/uart.c: 441:             {
+{
+"442
+[; ;../00-libfiles/uart.c: 442:                v_numOfDigitsToTransmit_u8 = 0;
+[e = _v_numOfDigitsToTransmit_u8 -> -> 0 `i `uc ]
+"443
+[; ;../00-libfiles/uart.c: 443:                while((ch>=0x30) && (ch<=0x39))
+[e $U 145  ]
+[e :U 146 ]
+"444
+[; ;../00-libfiles/uart.c: 444:                 {
+{
+"445
+[; ;../00-libfiles/uart.c: 445:                    v_numOfDigitsToTransmit_u8 = (v_numOfDigitsToTransmit_u8 * 10) + (ch-0x30);
+[e = _v_numOfDigitsToTransmit_u8 -> + * -> _v_numOfDigitsToTransmit_u8 `i -> 10 `i - -> _ch `i -> 48 `i `uc ]
+"446
+[; ;../00-libfiles/uart.c: 446:                    ptr++;
+[e ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
+"447
+[; ;../00-libfiles/uart.c: 447:                    ch = *ptr;
+[e = _ch *U _ptr ]
+"448
+[; ;../00-libfiles/uart.c: 448:                 }
+}
+[e :U 145 ]
+"443
+[; ;../00-libfiles/uart.c: 443:                while((ch>=0x30) && (ch<=0x39))
+[e $ && >= -> _ch `i -> 48 `i <= -> _ch `i -> 57 `i 146  ]
+[e :U 147 ]
+"449
+[; ;../00-libfiles/uart.c: 449:             }
+}
+[e $U 148  ]
+"450
+[; ;../00-libfiles/uart.c: 450:             else
+[e :U 144 ]
+"451
+[; ;../00-libfiles/uart.c: 451:             {
+{
+"452
+[; ;../00-libfiles/uart.c: 452:               v_numOfDigitsToTransmit_u8 = 0xffu;
+[e = _v_numOfDigitsToTransmit_u8 -> -> 255 `ui `uc ]
+"453
+[; ;../00-libfiles/uart.c: 453:             }
+}
+[e :U 148 ]
+"456
+[; ;../00-libfiles/uart.c: 456:             switch(ch)
+[e $U 150  ]
+"457
+[; ;../00-libfiles/uart.c: 457:             {
+{
+"458
+[; ;../00-libfiles/uart.c: 458:             case 'C':
+[e :U 151 ]
+"459
+[; ;../00-libfiles/uart.c: 459:             case 'c':
+[e :U 152 ]
+"460
+[; ;../00-libfiles/uart.c: 460:                 ch = (*(uint8_t *)__va_arg((*(uint8_t **)argp), (uint8_t)0));
+[e = _ch -> *U -> ( ___va_arg , (. -> *U -> &U _argp `**uc `*v -> -> -> 0 `i `uc `i `*uc `uc ]
+"461
+[; ;../00-libfiles/uart.c: 461:                 UART_TxChar(ch);
+[e ( _UART_TxChar (1 _ch ]
+"462
+[; ;../00-libfiles/uart.c: 462:                 break;
+[e $U 149  ]
+"464
+[; ;../00-libfiles/uart.c: 464:             case 'd':
+[e :U 153 ]
+"465
+[; ;../00-libfiles/uart.c: 465:                 v_num_s16 = (*(sint16_t *)__va_arg((*(sint16_t **)argp), (sint16_t)0));
+[e = _v_num_s16 *U -> ( ___va_arg , (. -> *U -> &U _argp `**i `*v -> 0 `i `*i ]
+"466
+[; ;../00-libfiles/uart.c: 466:                 if(v_num_s16<0)
+[e $ ! < _v_num_s16 -> 0 `i 154  ]
+"467
+[; ;../00-libfiles/uart.c: 467:                  {
+{
+"468
+[; ;../00-libfiles/uart.c: 468:                    v_num_s16 = -v_num_s16;
+[e = _v_num_s16 -U _v_num_s16 ]
+"469
+[; ;../00-libfiles/uart.c: 469:                    UART_TxChar('-');
+[e ( _UART_TxChar (1 -> -> 45 `ui `uc ]
+"470
+[; ;../00-libfiles/uart.c: 470:                  }
+}
+[e :U 154 ]
+"471
+[; ;../00-libfiles/uart.c: 471:                 UART_TxNumber(10u,v_num_s16,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 10 `ui `uc -> -> _v_num_s16 `l `ul _v_numOfDigitsToTransmit_u8 ]
+"472
+[; ;../00-libfiles/uart.c: 472:                 break;
+[e $U 149  ]
+"474
+[; ;../00-libfiles/uart.c: 474:             case 'D':
+[e :U 155 ]
+"475
+[; ;../00-libfiles/uart.c: 475:                 v_num_s32 = (*(sint32_t *)__va_arg((*(sint32_t **)argp), (sint32_t)0));
+[e = _v_num_s32 *U -> ( ___va_arg , (. -> *U -> &U _argp `**l `*v -> -> 0 `i `l `*l ]
+"476
+[; ;../00-libfiles/uart.c: 476:                 if(v_num_s32<0)
+[e $ ! < _v_num_s32 -> -> 0 `i `l 156  ]
+"477
+[; ;../00-libfiles/uart.c: 477:                  {
+{
+"478
+[; ;../00-libfiles/uart.c: 478:                    v_num_s32 = -v_num_s32;
+[e = _v_num_s32 -U _v_num_s32 ]
+"479
+[; ;../00-libfiles/uart.c: 479:                    UART_TxChar('-');
+[e ( _UART_TxChar (1 -> -> 45 `ui `uc ]
+"480
+[; ;../00-libfiles/uart.c: 480:                  }
+}
+[e :U 156 ]
+"481
+[; ;../00-libfiles/uart.c: 481:                 UART_TxNumber(10u,v_num_s32,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 10 `ui `uc -> _v_num_s32 `ul _v_numOfDigitsToTransmit_u8 ]
+"482
+[; ;../00-libfiles/uart.c: 482:                 break;
+[e $U 149  ]
+"484
+[; ;../00-libfiles/uart.c: 484:             case 'u':
+[e :U 157 ]
+"485
+[; ;../00-libfiles/uart.c: 485:                 v_num_u16 = (*(uint16_t *)__va_arg((*(uint16_t **)argp), (uint16_t)0));
+[e = _v_num_u16 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ui `*v -> -> 0 `i `ui `*ui ]
+"486
+[; ;../00-libfiles/uart.c: 486:                 UART_TxNumber(10u,v_num_u16,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 10 `ui `uc -> _v_num_u16 `ul _v_numOfDigitsToTransmit_u8 ]
+"487
+[; ;../00-libfiles/uart.c: 487:                 break;
+[e $U 149  ]
+"489
+[; ;../00-libfiles/uart.c: 489:             case 'U':
+[e :U 158 ]
+"490
+[; ;../00-libfiles/uart.c: 490:                 v_num_u32 = (*(uint32_t *)__va_arg((*(uint32_t **)argp), (uint32_t)0));
+[e = _v_num_u32 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ul `*v -> -> 0 `i `ul `*ul ]
+"491
+[; ;../00-libfiles/uart.c: 491:                 UART_TxNumber(10u,v_num_u32,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 10 `ui `uc _v_num_u32 _v_numOfDigitsToTransmit_u8 ]
+"492
+[; ;../00-libfiles/uart.c: 492:                 break;
+[e $U 149  ]
+"494
+[; ;../00-libfiles/uart.c: 494:             case 'x':
+[e :U 159 ]
+"495
+[; ;../00-libfiles/uart.c: 495:                 v_num_u16 = (*(uint16_t *)__va_arg((*(uint16_t **)argp), (uint16_t)0));
+[e = _v_num_u16 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ui `*v -> -> 0 `i `ui `*ui ]
+"496
+[; ;../00-libfiles/uart.c: 496:                 UART_TxNumber(16u,v_num_u16,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 16 `ui `uc -> _v_num_u16 `ul _v_numOfDigitsToTransmit_u8 ]
+"497
+[; ;../00-libfiles/uart.c: 497:                 break;
+[e $U 149  ]
+"499
+[; ;../00-libfiles/uart.c: 499:             case 'X':
+[e :U 160 ]
+"500
+[; ;../00-libfiles/uart.c: 500:                 v_num_u32 = (*(uint32_t *)__va_arg((*(uint32_t **)argp), (uint32_t)0));
+[e = _v_num_u32 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ul `*v -> -> 0 `i `ul `*ul ]
+"501
+[; ;../00-libfiles/uart.c: 501:                 UART_TxNumber(16u,v_num_u32,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 16 `ui `uc _v_num_u32 _v_numOfDigitsToTransmit_u8 ]
+"502
+[; ;../00-libfiles/uart.c: 502:                 break;
+[e $U 149  ]
+"505
+[; ;../00-libfiles/uart.c: 505:             case 'b':
+[e :U 161 ]
+"506
+[; ;../00-libfiles/uart.c: 506:                 v_num_u16 = (*(uint16_t *)__va_arg((*(uint16_t **)argp), (uint16_t)0));
+[e = _v_num_u16 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ui `*v -> -> 0 `i `ui `*ui ]
+"508
+[; ;../00-libfiles/uart.c: 508:                 if(v_numOfDigitsToTransmit_u8 == 0xffu)
+[e $ ! == -> _v_numOfDigitsToTransmit_u8 `ui -> 255 `ui 162  ]
+"509
+[; ;../00-libfiles/uart.c: 509:                    v_numOfDigitsToTransmit_u8 = 16;
+[e = _v_numOfDigitsToTransmit_u8 -> -> 16 `i `uc ]
+[e :U 162 ]
+"511
+[; ;../00-libfiles/uart.c: 511:                 UART_TxNumber(2u,v_num_u16,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 2 `ui `uc -> _v_num_u16 `ul _v_numOfDigitsToTransmit_u8 ]
+"512
+[; ;../00-libfiles/uart.c: 512:                 break;
+[e $U 149  ]
+"514
+[; ;../00-libfiles/uart.c: 514:             case 'B':
+[e :U 163 ]
+"515
+[; ;../00-libfiles/uart.c: 515:                 v_num_u32 = (*(uint32_t *)__va_arg((*(uint32_t **)argp), (uint32_t)0));
+[e = _v_num_u32 *U -> ( ___va_arg , (. -> *U -> &U _argp `**ul `*v -> -> 0 `i `ul `*ul ]
+"517
+[; ;../00-libfiles/uart.c: 517:                 if(v_numOfDigitsToTransmit_u8 == 0xffu)
+[e $ ! == -> _v_numOfDigitsToTransmit_u8 `ui -> 255 `ui 164  ]
+"518
+[; ;../00-libfiles/uart.c: 518:                    v_numOfDigitsToTransmit_u8 = 32;
+[e = _v_numOfDigitsToTransmit_u8 -> -> 32 `i `uc ]
+[e :U 164 ]
+"520
+[; ;../00-libfiles/uart.c: 520:                 UART_TxNumber(2u,v_num_u32,v_numOfDigitsToTransmit_u8);
+[e ( _UART_TxNumber (3 , , -> -> 2 `ui `uc _v_num_u32 _v_numOfDigitsToTransmit_u8 ]
+"521
+[; ;../00-libfiles/uart.c: 521:                 break;
+[e $U 149  ]
+"524
+[; ;../00-libfiles/uart.c: 524:             case 'F':
+[e :U 165 ]
+"525
+[; ;../00-libfiles/uart.c: 525:             case 'f':
+[e :U 166 ]
+"530
+[; ;../00-libfiles/uart.c: 530:                 break;
+[e $U 149  ]
+"533
+[; ;../00-libfiles/uart.c: 533:             case 'S':
+[e :U 167 ]
+"534
+[; ;../00-libfiles/uart.c: 534:             case 's':
+[e :U 168 ]
+"535
+[; ;../00-libfiles/uart.c: 535:                 str = (*(char * *)__va_arg((*(char * **)argp), (char *)0));
+[e = _str *U -> ( ___va_arg , (. -> *U -> &U _argp `***uc `*v -> -> 0 `i `*uc `**uc ]
+"536
+[; ;../00-libfiles/uart.c: 536:                 UART_TxString(str);
+[e ( _UART_TxString (1 -> _str `*Cuc ]
+"537
+[; ;../00-libfiles/uart.c: 537:                 break;
+[e $U 149  ]
+"539
+[; ;../00-libfiles/uart.c: 539:             case '%':
+[e :U 169 ]
+"540
+[; ;../00-libfiles/uart.c: 540:                 UART_TxChar('%');
+[e ( _UART_TxChar (1 -> -> 37 `ui `uc ]
+"541
+[; ;../00-libfiles/uart.c: 541:                 break;
+[e $U 149  ]
+"542
+[; ;../00-libfiles/uart.c: 542:             }
+}
+[e $U 149  ]
+[e :U 150 ]
+[e [\ -> _ch `i , $ -> -> 67 `ui `i 151
+ , $ -> -> 99 `ui `i 152
+ , $ -> -> 100 `ui `i 153
+ , $ -> -> 68 `ui `i 155
+ , $ -> -> 117 `ui `i 157
+ , $ -> -> 85 `ui `i 158
+ , $ -> -> 120 `ui `i 159
+ , $ -> -> 88 `ui `i 160
+ , $ -> -> 98 `ui `i 161
+ , $ -> -> 66 `ui `i 163
+ , $ -> -> 70 `ui `i 165
+ , $ -> -> 102 `ui `i 166
+ , $ -> -> 83 `ui `i 167
+ , $ -> -> 115 `ui `i 168
+ , $ -> -> 37 `ui `i 169
+ 149 ]
+[e :U 149 ]
+"543
+[; ;../00-libfiles/uart.c: 543:         }
+}
+[e $U 170  ]
+"544
+[; ;../00-libfiles/uart.c: 544:         else
+[e :U 143 ]
+"545
+[; ;../00-libfiles/uart.c: 545:         {
+{
+"547
+[; ;../00-libfiles/uart.c: 547:             UART_TxChar(ch);
+[e ( _UART_TxChar (1 _ch ]
+"548
+[; ;../00-libfiles/uart.c: 548:         }
+}
+[e :U 170 ]
+"549
+[; ;../00-libfiles/uart.c: 549:     }
+}
+[e ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x ]
+[e :U 142 ]
+[e $ != -> *U _ptr `ui -> 0 `ui 139  ]
+[e :U 140 ]
+}
+"552
+[; ;../00-libfiles/uart.c: 552: }
+[e :UE 138 ]
+}
+"556
+[; ;../00-libfiles/uart.c: 556: 
+[p o ]

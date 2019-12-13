@@ -1,0 +1,162 @@
+C51 COMPILER V9.59.0.0   MATRIX                                                            06/23/2019 13:20:23 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE MATRIX
+OBJECT MODULE PLACED IN .\Objects\matrix.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE matrix.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\ma
+                    -trix.lst) TABS(2) OBJECT(.\Objects\matrix.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define display_port P2      //Data pins connected to port 2 on microcontroller
+   3          sbit rs = P3^2;  //RS pin connected to pin 2 of port 3
+   4          sbit rw = P3^3;  // RW pin connected to pin 3 of port 3
+   5          sbit e =  P3^4;  //E pin connected to pin 4 of port 3
+   6                          // Connecting keypad to Port 1
+   7          sbit C3 = P1^7;
+   8          sbit C2 = P1^6;
+   9          sbit C1 = P1^5;
+  10          sbit R4 = P1^4;
+  11          sbit R3 = P1^3;
+  12          sbit R2 = P1^2;
+  13          sbit R1 = P1^1;
+  14          static int lcdcount;
+  15          
+  16          void msdelay(unsigned int time)  // Function for creating delay in milliseconds.
+  17          {
+  18   1          unsigned i,j ;
+  19   1          for(i=0;i<time;i++)    
+  20   1          for(j=0;j<1275;j++);
+  21   1      }
+  22          void lcd_cmd(unsigned char command)  //Function to send command instruction to LCD
+  23          {
+  24   1          display_port = command;
+  25   1          rs= 0;
+  26   1          rw=0;
+  27   1          e=1;
+  28   1          msdelay(1);
+  29   1          e=0;
+  30   1      }
+  31          
+  32          void lcd_data(unsigned char disp_data)  //Function to send display data to LCD
+  33          {   lcdcount == 0;
+*** WARNING C275 IN LINE 33 OF matrix.c: expression with possibly no effect
+  34   1          display_port = disp_data;
+  35   1          rs= 1;
+  36   1          rw=0;
+  37   1          e=1;
+  38   1          msdelay(1);
+  39   1          e=0;
+  40   1          lcdcount=lcdcount++;
+  41   1      }
+  42          
+  43           void lcd_init()    //Function to prepare the LCD  and get it ready
+  44          {
+  45   1          lcd_cmd(0x38);  // for using 2 lines and 5X7 matrix of LCD
+  46   1          msdelay(10);
+  47   1          lcd_cmd(0x0F);  // turn display ON, cursor blinking
+  48   1          msdelay(10);
+  49   1          lcd_cmd(0x01);  //clear screen
+  50   1          msdelay(10);
+  51   1          lcd_cmd(0x80);  // bring cursor to position 1 of line 1
+  52   1          msdelay(10);
+  53   1      }
+C51 COMPILER V9.59.0.0   MATRIX                                                            06/23/2019 13:20:23 PAGE 2   
+
+  54          
+  55           void lcd_init2()    //Function to prepare the LCD  and get it ready
+  56          {
+  57   1          lcd_cmd(0x38);  // for using 2 lines and 5X7 matrix of LCD
+  58   1          msdelay(10);
+  59   1          lcd_cmd(0x0F);  // turn display ON, cursor blinking
+  60   1          msdelay(10);
+  61   1          lcd_cmd(0x01);  //clear screen
+  62   1          msdelay(10);
+  63   1          lcd_cmd(0xc0);  // bring cursor to position 1 of line 2
+  64   1          msdelay(10);
+  65   1      }
+  66          
+  67          void row_finder1() //Function for finding the row for column 1
+  68          {
+  69   1      R1=R2=R3=R4=1;
+  70   1      C1=C2=C3=0;
+  71   1      
+  72   1      if(R1==0)
+  73   1      lcd_data('1');
+  74   1      if(R2==0)
+  75   1      lcd_data('4');
+  76   1      if(R3==0)
+  77   1      lcd_data('7');
+  78   1      if(R4==0)
+  79   1      lcd_data('*');
+  80   1      }
+  81          
+  82          void row_finder2() //Function for finding the row for column 2
+  83          {
+  84   1      R1=R2=R3=R4=1;
+  85   1      C1=C2=C3=0;
+  86   1      
+  87   1      if(R1==0)
+  88   1      lcd_data('2');
+  89   1      if(R2==0)
+  90   1      lcd_data('5');
+  91   1      if(R3==0)
+  92   1      lcd_data('8');
+  93   1      if(R4==0)
+  94   1      lcd_data('0');
+  95   1      }
+  96          
+  97          void row_finder3() //Function for finding the row for column 3
+  98          {
+  99   1      R1=R2=R3=R4=1;
+ 100   1      C1=C2=C3=0;
+ 101   1      
+ 102   1      if(R1==0)
+ 103   1      lcd_data('3');
+ 104   1      if(R2==0)
+ 105   1      lcd_data('6');
+ 106   1      if(R3==0)
+ 107   1      lcd_data('9');
+ 108   1      if(R4==0)
+ 109   1      lcd_data('#');
+ 110   1      }
+ 111          
+ 112          
+ 113          void main()
+ 114          {
+ 115   1          lcd_init();
+C51 COMPILER V9.59.0.0   MATRIX                                                            06/23/2019 13:20:23 PAGE 3   
+
+ 116   1          while(1)
+ 117   1          {    
+ 118   2              msdelay(30); 
+ 119   2                C1=C2=C3=1;
+ 120   2                R1=R2=R3=R4=0;
+ 121   2                if(C1==0)
+ 122   2                row_finder1();
+ 123   2                else if(C2==0)
+ 124   2                 row_finder2();
+ 125   2                 else if(C3==0)
+ 126   2                  row_finder3();
+ 127   2             if(lcdcount==16)
+ 128   2             {
+ 129   3                lcd_init2();
+ 130   3             }
+ 131   2          }
+ 132   1      
+ 133   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    339    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

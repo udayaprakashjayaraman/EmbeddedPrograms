@@ -1,0 +1,3 @@
+".\Objects\matrix.obj" 
+TO ".\Objects\matrixx" 
+PRINT(".\Listings\matrixx.m51") RAMSIZE(256) 

@@ -1,0 +1,51 @@
+C51 COMPILER V9.59.0.0   4_7SEGMENT_LED                                                    05/25/2019 15:38:47 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE 4_7SEGMENT_LED
+OBJECT MODULE PLACED IN .\Objects\4 7segment led.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE 4 7segment led.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Lis
+                    -tings\4 7segment led.lst) TABS(2) OBJECT(.\Objects\4 7segment led.obj)
+
+line level    source
+
+   1          #include <reg52.h>
+   2          void Delay(unsigned int ms_Count)
+   3          {
+   4   1        unsigned int i,j;
+   5   1        for(i=0; i<ms_Count; i++)
+   6   1        {
+   7   2          for(j=0; j<100; j++);
+   8   2        }
+   9   1      }
+  10          
+  11          
+  12          int main()
+  13          {
+  14   1        P1 = 0x00;
+  15   1        
+  16   1        while(1)
+  17   1        {
+  18   2          P1 = 0x06;
+  19   2          Delay(1000);
+  20   2          P1= 0x5B;
+  21   2          Delay(1000);
+  22   2          P1 = 0x4F;
+  23   2          Delay(1000);
+  24   2        }   
+  25   1        
+  26   1        
+  27   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     59    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

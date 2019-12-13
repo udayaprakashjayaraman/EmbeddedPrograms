@@ -1,0 +1,3 @@
+"C:\Users\Udaya\Desktop\Programms\8051\HexFile\Led blink switch left bit 80c51.obj" 
+TO "C:\Users\Udaya\Desktop\Programms\8051\HexFile\8051" 
+PRINT(".\Listings\8051.m51") RAMSIZE(256) 

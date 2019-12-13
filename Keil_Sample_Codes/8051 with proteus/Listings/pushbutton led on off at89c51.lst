@@ -1,0 +1,43 @@
+C51 COMPILER V9.59.0.0   PUSHBUTTON_LED_ON_OFF_AT89C51                                     05/21/2019 12:44:20 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE PUSHBUTTON_LED_ON_OFF_AT89C51
+OBJECT MODULE PLACED IN .\HexFile\pushbutton led on off at89c51.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE pushbutton led on off at89c51.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXT
+                    -END PRINT(.\Listings\pushbutton led on off at89c51.lst) TABS(2) OBJECT(.\HexFile\pushbutton led on off at89c51.obj)
+
+line level    source
+
+   1          #include "reg51.h"
+   2          
+   3          int main() 
+   4          {
+   5   1        
+   6   1        
+   7   1          P1 = 0x00; /* Configure P1 as Input to read the Switch status */
+   8   1          P3 = 0xff; //output
+   9   1         
+  10   1         while(1)
+  11   1          {  
+  12   2          /* Read the switches connected to P3 and accordingly turn ON/OFF  leds connected to P1*/
+  13   2             P1 = P3;  
+  14   2          }
+  15   1      
+  16   1          return (0);
+  17   1      }
+  18          
+*** WARNING C294 IN LINE 16 OF pushbutton led on off at89c51.c: unreachable code
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     11    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
